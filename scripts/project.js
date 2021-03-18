@@ -3,6 +3,9 @@ const start = document.getElementById('start');
 const score = document.getElementById('score');
 const winner = document.getElementById('winner');
 const startbtn = document.getElementById('start-btn');
+const stopbtn = document.getElementById('btn-close');
+const againbtn = document.getElementById('btn-again');
+const thanks = document.getElementById('thanks');
 const pr11 = document.getElementById('box4');
 const pr12 = document.getElementById('box5');
 const cr11 = document.getElementById('box7');
@@ -33,6 +36,8 @@ let totalc =[0,0,0];
 let subp = 0;
 let subc = 0;
 let counter = 0;
+
+
 
 start.addEventListener("click",function(){
     startbtn.innerHTML = "Next Roll";
@@ -130,8 +135,35 @@ else{
 
 })  
 
+stopbtn.addEventListener("click",function(){
+    popUp.style.transition = "opacity 0s";
+    popUp.style.opacity =0;
+    startbtn.innerHTML = "Thanks";
+    counter=0;
+    rollp1 = [0,0,0];
+    rollc1 =[0,0,0];
+    rollp2 = [0,0,0];
+    rollc2 =[0,0,0];
+    totalp = [0,0,0];
+    totalc =[0,0,0];
+    subp = 0;
+    subc = 0;
+    thanks.style.display = "block";
+    
 
+})
 
-
-
+againbtn.addEventListener("click",function(){
+    popUp.style.opacity =0;
+    startbtn.innerHTML = "Play Again";
+    counter=0;
+    rollp1 = [0,0,0];
+    rollc1 =[0,0,0];
+    rollp2 = [0,0,0];
+    rollc2 =[0,0,0];
+    totalp = [0,0,0];
+    totalc =[0,0,0];
+    subp = 0;
+    subc = 0;
+})
 

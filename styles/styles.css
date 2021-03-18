@@ -164,6 +164,20 @@ html {
     opacity:0;
     pointer-events: none;
 }
+#thanks{
+    width:300px;
+    padding:10px;
+    background-color: indianred;
+    color:white;
+    border:solid 1px black;
+    box-shadow:0px 0px 5px yellow, 5px 5px 5px black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    display: none;
+    transform:translate(-50%, -50%);
+    pointer-events: none;   
+}
 #btn-close{
     position:absolute;
     bottom:10px;
