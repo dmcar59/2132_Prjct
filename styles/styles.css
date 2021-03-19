@@ -1,299 +1,360 @@
-@charset "utf-8";
 @import url("normalize.css");
 /* Resets */
-
 /* Paul Irish - Box Sizing Reset 
    - https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-    box-sizing: border-box;
-    background-image: url(../images/vegas.jpg);
+  box-sizing: border-box;
+  background-image: url(../images/vegas.jpg);
 }
+
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
-#container{
-   /* display:flex;
+
+#container {
+  /* display:flex;
     flex-wrap:wrap;
     justify-content: center;*/
-    border:solid 1px black;
-    min-width:45%;
-    height:500px;
-    display: grid;
-	/* Use the repeat function to repeat same sized columns */
-  	grid-template-columns: repeat(7, 1fr);
-  	grid-auto-rows: 10px;
-	grid-gap: 20px;
-	/* Note: use " . "  as a placeholder if you want
+  border: solid 1px black;
+  min-width: 45%;
+  height: 500px;
+  display: grid;
+  /* Use the repeat function to repeat same sized columns */
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 10px;
+  grid-gap: 20px;
+  /* Note: use " . "  as a placeholder if you want
 	   to leave one section of the grid blank */
-	grid-template-areas:
-		"one one one two two two two"
-        "three four five six seven eight nine"
-		"ten eleven twelve thirt fourt fivet sixt"
-		"sevt eghtt ninet twent twent1 twent2 twent3"
-		"twent4 twent4 twent4 twent5 twent5 twent5 twent6";
-    
+  grid-template-areas: "one one one two two two two" "three four five six seven eight nine" "ten eleven twelve thirt fourt fivet sixt" "sevt eghtt ninet twent twent1 twent2 twent3" "twent4 twent4 twent4 twent5 twent5 twent5 twent6";
 }
+
 .box1 {
-	grid-area: one;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: one;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 .box2 {
-	grid-area: two;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: two;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 .box3 {
-	grid-area: three;
+  grid-area: three;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box4 {
-	grid-area: four;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: four;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box5 {
-	grid-area: five;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: five;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box6 {
-	grid-area: six;
+  grid-area: six;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box7 {
-	grid-area: seven;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: seven;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box8 {
-	grid-area: eight;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: eight;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box9 {
-	grid-area: nine;
+  grid-area: nine;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 .box10 {
-	grid-area: ten;
+  grid-area: ten;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box11 {
-	grid-area: eleven;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: eleven;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box12 {
-	grid-area: twelve;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: twelve;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box13 {
-	grid-area: thirt;
+  grid-area: thirt;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box14 {
-	grid-area: fourt;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: fourt;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box15 {
-	grid-area: fivet;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: fivet;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box16 {
-	grid-area: sixt;
+  grid-area: sixt;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 .box17 {
-	grid-area: sevt;
+  grid-area: sevt;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box18 {
-	grid-area: eghtt;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: eghtt;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box19 {
-	grid-area: ninet;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: ninet;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box20 {
-	grid-area: twent;
+  grid-area: twent;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box21 {
-	grid-area: twent1;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: twent1;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box22 {
-	grid-area: twent2;
-    border:solid 1px black;
-    height: 25px;
+  grid-area: twent2;
+  border: solid 1px black;
+  height: 15px;
+  width: 100px;
 }
+
 #box23 {
-	grid-area: twent3;
+  grid-area: twent3;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 .box24 {
-	grid-area: twent4;
+  grid-area: twent4;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box25 {
-	grid-area: twent5;
+  grid-area: twent5;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 #box26 {
-	grid-area: twent6;
+  grid-area: twent6;
+  border: dashed 2px red;
+  height: 15px;
+  width: 100px;
 }
+
 /*#container button{
     flex:0 0 auto;
 }*/
-#start {
-    
+#pop-up {
+  width: 300px;
+  padding: 10px;
+  background-color: indianred;
+  color: white;
+  border: solid 1px black;
+  box-shadow: 0px 0px 5px yellow, 5px 5px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: opacity 2s;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
 }
 
-#pop-up{
-    width:300px;
-    padding:10px;
-    background-color: indianred;
-    color:white;
-    border:solid 1px black;
-    box-shadow:0px 0px 5px yellow, 5px 5px 5px black;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transition: opacity 2s;
-    transform:translate(-50%, -50%);
-    
-    opacity:0;
-    pointer-events: none;
+#thanks {
+  width: 300px;
+  padding: 10px;
+  background-color: indianred;
+  color: white;
+  border: solid 1px black;
+  box-shadow: 0px 0px 5px yellow, 5px 5px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
-#thanks{
-    width:300px;
-    padding:10px;
-    background-color: indianred;
-    color:white;
-    border:solid 1px black;
-    box-shadow:0px 0px 5px yellow, 5px 5px 5px black;
-    position:absolute;
-    top:50%;
-    left:50%;
-    display: none;
-    transform:translate(-50%, -50%);
-    pointer-events: none;   
+
+#btn-close {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  background-color: inherit;
+  color: inherit;
+  border: solid 1px white;
+  cursor: pointer;
+  /* ensure pointer events will apply to the button */
+  pointer-events: all;
 }
-#btn-close{
-    position:absolute;
-    bottom:10px;
-    left:10px;
-    font-weight: bold;
-    background-color: inherit;
-    color:inherit;
-    border:solid 1px white;
-    cursor:pointer;
-    /* ensure pointer events will apply to the button */
-    pointer-events: all;
-}
-#btn-again{
-    position:absolute;
-    bottom:10px;
-    right:10px;
-    font-weight: bold;
-    background-color: inherit;
-    color:inherit;
-    border:solid 1px grey;
-    cursor:pointer;
-    /* ensure pointer events will apply to the button */
-    pointer-events: all;
+
+#btn-again {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  background-color: inherit;
+  color: inherit;
+  border: solid 1px grey;
+  cursor: pointer;
+  /* ensure pointer events will apply to the button */
+  pointer-events: all;
 }
 
 body {
-    margin: 0;
-    display:flexbox;
-    flex-direction:column ;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    min-height: 100vh;
-    /*background-color: #353535;*/
-   
+  margin: 0;
+  display: flexbox;
+  flex-direction: column;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  min-height: 100vh;
+  /*background-color: #353535;*/
 }
 
 header, footer, main, article, section {
-    display: block;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 nav a {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 p {
-    line-height: 1.6;
-    font-size: 1.15em;
+  line-height: 1.6;
+  font-size: 1.15em;
 }
 
 li {
-    font-size: 1.15em;
-    margin-bottom: 1em;
+  font-size: 1.15em;
+  margin-bottom: 1em;
 }
 
 .border {
-    width: 50%;
-    height: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    box-shadow:5px 10px 5px purple;
-    display: flex;
-    flex-direction: column;
-    
+  width: 50%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 5px 10px 5px purple;
+  display: flex;
+  flex-direction: column;
 }
 
 .warning {
-    padding: 16px;
-    background-color: #fdb3b3;
+  padding: 16px;
+  background-color: #fdb3b3;
 }
 
 .warning p {
-    margin: 0;
+  margin: 0;
 }
 
-.warning:not(.warning-no-script){
-    margin-bottom: 1em;
+.warning:not(.warning-no-script) {
+  margin-bottom: 1em;
 }
 
 header h1 {
-    margin: 0;
-    padding:20px;
-    text-align:center;
-    color: white;
-    line-height: 1;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  line-height: 1;
 }
 
 main {
-    padding: 20px;
-   
+  padding: 20px;
 }
 
 .submit {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-
 
 footer {
-    padding: 20px;
-    font-size: 1.1em;
-    /*border-top: 1px dotted white;*/
-    color: white;
+  padding: 20px;
+  font-size: 1.1em;
+  /*border-top: 1px dotted white;*/
+  color: white;
 }
 
-
-
-
-a{
-	font-weight:bold;
-	color:#b78731;
-}
-a:hover{
-	color:orange;
-	text-decoration:none;
+a {
+  font-weight: bold;
+  color: #b78731;
 }
 
-
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
