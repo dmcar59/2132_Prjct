@@ -20,15 +20,15 @@ $border_headings:  none;
 $main_button_color:#F3C620;
 
 $main_boxes_width: auto;
-$main_boxes_height: 100px;
-$border_box_height: 50px;
+$main_boxes_height: 65px; //used in mixin for most boxes
+$border_box_height: 65px; //used in mixin for only two boxes
 $border_type: none;
 $border_font: 1px;
 $box_display: flex;
 $box_justify: center;
 $box_align: center;
-$header_font: 35px;
-$grid_name_font:20px;
+$header_font: 25px;
+$grid_name_font:15px;
 $font_family: 'Roboto',sans-serif;
 $radius:30px;
 $button_radius:30px;
@@ -62,6 +62,7 @@ html {
   	grid-template-columns:  repeat(8, 1fr);
 	grid-gap: 5px;
     
+    
 }
 #box1 {
 	
@@ -76,7 +77,7 @@ html {
     font-size: $header_font;
 }
 #box3 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:3/1/4/3;
     font-size: $grid_name_font;
 }
@@ -90,7 +91,7 @@ html {
     grid-area:3/4/4/5;
 }
 #box6 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:3/5/4/6;
     font-size: $grid_name_font;
 }
@@ -103,12 +104,12 @@ html {
     grid-area:3/7/4/8;
 }
 #box9 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:3/8/4/9;
     font-size: $grid_name_font;
 }
 #box10 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:4/1/5/3;
     font-size: $grid_name_font;
 }
@@ -121,7 +122,7 @@ html {
     grid-area:4/4/5/5;
 }
 #box13 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:4/5/5/6;
     font-size: $grid_name_font;
 }
@@ -134,12 +135,12 @@ html {
     grid-area:4/7/5/8;
 }
 #box16 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:4/8/5/9;
     font-size: $grid_name_font;
 }
 #box17 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:5/1/6/3;
     font-size: $grid_name_font;
 }
@@ -152,7 +153,7 @@ html {
     grid-area:5/4/6/5;
 }
 #box20 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:5/5/6/6;
     font-size: $grid_name_font;
 }
@@ -165,59 +166,59 @@ html {
     grid-area:5/7/6/8;
 }
 #box23 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:5/8/6/9;
     font-size: $grid_name_font;
 }
 #box24 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:6/1/7/3;
     font-size: $grid_name_font;
 }
 #box25 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:6/5/7/6;
     border-top: solid;
     font-size: $grid_name_font;
 }
 #box26 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:6/8/7/9;
     border-top: solid;
     font-size: $grid_name_font;
 }
 #box27 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/3/3/4;
     border-bottom: solid;
     font-size: $grid_name_font;
 }
 #box28 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/4/3/5;
     border-bottom: solid;
     font-size: $grid_name_font;
 }
 #box29 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/5/3/6;
     border-bottom: solid;
     font-size: $grid_name_font;
 }
 #box30 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/6/3/7;
     border-bottom: solid;
     font-size: $grid_name_font;
 }
 #box31 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/7/3/8;
     border-bottom: solid;
     font-size: $grid_name_font;
 }
 #box32 {
-	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+	@include grid_boxes( $border_type, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
     grid-area:2/8/3/9;
     border-bottom: solid;
     font-size: $grid_name_font;
@@ -465,7 +466,12 @@ footer {
     font-size: 1.1em;
     color: white;
 }
-
-
+// for 1024px screens
+@media  screen and (min-width:1400px){
+   #box3,  #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12, #box13, #box14, #box15, #box16, #box17, #box18, #box19, #box20, #box21, #box22, #box23, #box24, #box25, #box26, #box27, #box28, #box29, #box30, #box31, #box32{height:100px;}
+   #box3,  #box9, #box10,  #box13,  #box16, #box17, #box18, #box19, #box20,  #box23, #box24, #box25, #box26, #box27, #box28, #box29, #box30, #box31, #box32{font-size:20px;}
+   
+    #box1,#box2 {font-size:35px;}
+}
 
 

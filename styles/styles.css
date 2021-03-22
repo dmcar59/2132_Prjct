@@ -23,40 +23,40 @@ html {
 
 #box1 {
   border: none 1px black;
-  height: 50px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 1/3/2/6;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #box2 {
   border: none 1px black;
-  height: 50px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 1/6/2/9;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #box3 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 3/1/4/3;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box4 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -66,7 +66,7 @@ html {
 
 #box5 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -75,19 +75,19 @@ html {
 }
 
 #box6 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 3/5/4/6;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box7 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@ html {
 
 #box8 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -106,30 +106,30 @@ html {
 }
 
 #box9 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 3/8/4/9;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box10 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 4/1/5/3;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box11 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -139,7 +139,7 @@ html {
 
 #box12 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -148,19 +148,19 @@ html {
 }
 
 #box13 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 4/5/5/6;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box14 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -170,7 +170,7 @@ html {
 
 #box15 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -179,30 +179,30 @@ html {
 }
 
 #box16 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 4/8/5/9;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box17 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 5/1/6/3;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box18 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -212,7 +212,7 @@ html {
 
 #box19 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -221,19 +221,19 @@ html {
 }
 
 #box20 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 5/5/6/6;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box21 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -243,7 +243,7 @@ html {
 
 #box22 {
   border: none 1px black;
-  height: 100px;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
@@ -252,121 +252,121 @@ html {
 }
 
 #box23 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 5/8/6/9;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box24 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 6/1/7/3;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box25 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 6/5/7/6;
   border-top: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box26 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 6/8/7/9;
   border-top: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box27 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/3/3/4;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box28 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/4/3/5;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box29 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/5/3/6;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box30 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/6/3/7;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box31 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/7/3/8;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #box32 {
-  border: dashed 1px none;
-  height: 100px;
+  border: none 1px none;
+  height: 65px;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 2/8/3/9;
   border-bottom: solid;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #start-btn {
@@ -617,4 +617,16 @@ footer {
   padding: 20px;
   font-size: 1.1em;
   color: white;
+}
+
+@media screen and (min-width: 1400px) {
+  #box3, #box4, #box5, #box6, #box7, #box8, #box9, #box10, #box11, #box12, #box13, #box14, #box15, #box16, #box17, #box18, #box19, #box20, #box21, #box22, #box23, #box24, #box25, #box26, #box27, #box28, #box29, #box30, #box31, #box32 {
+    height: 100px;
+  }
+  #box3, #box9, #box10, #box13, #box16, #box17, #box18, #box19, #box20, #box23, #box24, #box25, #box26, #box27, #box28, #box29, #box30, #box31, #box32 {
+    font-size: 20px;
+  }
+  #box1, #box2 {
+    font-size: 35px;
+  }
 }
