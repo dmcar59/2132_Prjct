@@ -14,214 +14,431 @@ html {
 }
 
 #container {
-  /* display:flex;
-    flex-wrap:wrap;
-    justify-content: center;*/
-  border: solid 1px black;
   min-width: 45%;
   height: 500px;
   display: grid;
-  /* Use the repeat function to repeat same sized columns */
-  grid-template-columns: repeat(7, 1fr);
-  grid-auto-rows: 10px;
-  grid-gap: 20px;
-  /* Note: use " . "  as a placeholder if you want
-	   to leave one section of the grid blank */
-  grid-template-areas: "one one one two two two two" "three four five six seven eight nine" "ten eleven twelve thirt fourt fivet sixt" "sevt eghtt ninet twent twent1 twent2 twent3" "twent4 twent4 twent4 twent5 twent5 twent5 twent6";
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 5px;
 }
 
-.box1 {
-  grid-area: one;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+#box1 {
+  border: none 1px black;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1/3/2/6;
+  font-size: 35px;
 }
 
-.box2 {
-  grid-area: two;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+#box2 {
+  border: none 1px black;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1/6/2/9;
+  font-size: 35px;
 }
 
-.box3 {
-  grid-area: three;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+#box3 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/1/4/3;
+  font-size: 20px;
 }
 
 #box4 {
-  grid-area: four;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/3/4/4;
 }
 
 #box5 {
-  grid-area: five;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/4/4/5;
 }
 
 #box6 {
-  grid-area: six;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/5/4/6;
+  font-size: 20px;
 }
 
 #box7 {
-  grid-area: seven;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/6/4/7;
 }
 
 #box8 {
-  grid-area: eight;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/7/4/8;
 }
 
 #box9 {
-  grid-area: nine;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 3/8/4/9;
+  font-size: 20px;
 }
 
-.box10 {
-  grid-area: ten;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+#box10 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/1/5/3;
+  font-size: 20px;
 }
 
 #box11 {
-  grid-area: eleven;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/3/5/4;
 }
 
 #box12 {
-  grid-area: twelve;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/4/5/5;
 }
 
 #box13 {
-  grid-area: thirt;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/5/5/6;
+  font-size: 20px;
 }
 
 #box14 {
-  grid-area: fourt;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/6/5/7;
 }
 
 #box15 {
-  grid-area: fivet;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/7/5/8;
 }
 
 #box16 {
-  grid-area: sixt;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4/8/5/9;
+  font-size: 20px;
 }
 
-.box17 {
-  grid-area: sevt;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+#box17 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/1/6/3;
+  font-size: 20px;
 }
 
 #box18 {
-  grid-area: eghtt;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/3/6/4;
 }
 
 #box19 {
-  grid-area: ninet;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/4/6/5;
 }
 
 #box20 {
-  grid-area: twent;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/5/6/6;
+  font-size: 20px;
 }
 
 #box21 {
-  grid-area: twent1;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/6/6/7;
 }
 
 #box22 {
-  grid-area: twent2;
-  border: solid 1px black;
-  height: 15px;
-  width: 100px;
+  border: none 1px black;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/7/6/8;
 }
 
 #box23 {
-  grid-area: twent3;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 5/8/6/9;
+  font-size: 20px;
 }
 
-.box24 {
-  grid-area: twent4;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+#box24 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 6/1/7/3;
+  font-size: 20px;
 }
 
 #box25 {
-  grid-area: twent5;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 6/5/7/6;
+  border-top: solid;
+  font-size: 20px;
 }
 
 #box26 {
-  grid-area: twent6;
-  border: dashed 2px red;
-  height: 15px;
-  width: 100px;
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 6/8/7/9;
+  border-top: solid;
+  font-size: 20px;
 }
 
-/*#container button{
-    flex:0 0 auto;
-}*/
+#box27 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/3/3/4;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#box28 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/4/3/5;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#box29 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/5/3/6;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#box30 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/6/3/7;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#box31 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/7/3/8;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#box32 {
+  border: dashed 1px none;
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 2/8/3/9;
+  border-bottom: solid;
+  font-size: 20px;
+}
+
+#start-btn {
+  display: inline-block;
+  padding: 5px 2px 5px 2px;
+  width: 100px;
+  margin: 0 0px 5px 0px;
+  border: 2px dotted rgba(61, 27, 156, 0);
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: #F3C620;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #016D29;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+#start-btn:hover {
+  border-color: white;
+}
+
+#rules-btn {
+  display: inline-block;
+  padding: 5px 2px 5px 2px;
+  width: 100px;
+  margin: 0 0px 5px 0px;
+  border: 2px dotted rgba(61, 27, 156, 0);
+  border-radius: 30px;
+  box-sizing: border-box;
+  background-color: #F3C620;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #016D29;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+#rules-btn:hover {
+  border-color: white;
+}
+
+#refresh-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #F3C620;
+  color: #016D29;
+  border: 2px dotted rgba(61, 27, 156, 0);
+  cursor: pointer;
+  /* ensure pointer events will apply to the button */
+  pointer-events: all;
+}
+
+#refresh-btn:hover {
+  border-color: white;
+}
+
 #pop-up {
-  width: 300px;
+  width: 450px;
   padding: 10px;
-  background-color: indianred;
-  color: white;
+  background-color: #016D29;
+  color: #F3C620;
+  border-radius: 30px;
   border: solid 1px black;
-  box-shadow: 0px 0px 5px yellow, 5px 5px 5px black;
+  box-shadow: 0px 0px 5px black, 5px 5px 5px black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -232,12 +449,13 @@ html {
 }
 
 #thanks {
-  width: 300px;
+  width: 450px;
   padding: 10px;
-  background-color: indianred;
-  color: white;
+  background-color: #016D29;
+  border-radius: 30px;
+  color: #F3C620;
   border: solid 1px black;
-  box-shadow: 0px 0px 5px yellow, 5px 5px 5px black;
+  box-shadow: 0px 0px 5px black, 5px 5px 5px black;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -251,12 +469,17 @@ html {
   bottom: 10px;
   left: 10px;
   font-weight: bold;
-  background-color: inherit;
-  color: inherit;
-  border: solid 1px white;
+  border-radius: 30px;
+  background-color: #F3C620;
+  color: #016D29;
+  border: 2px dotted rgba(61, 27, 156, 0);
   cursor: pointer;
   /* ensure pointer events will apply to the button */
   pointer-events: all;
+}
+
+#btn-close:hover {
+  border-color: white;
 }
 
 #btn-again {
@@ -264,38 +487,88 @@ html {
   bottom: 10px;
   right: 10px;
   font-weight: bold;
-  background-color: inherit;
-  color: inherit;
-  border: solid 1px grey;
+  border-radius: 30px;
+  background-color: #F3C620;
+  color: #016D29;
+  border: 2px dotted rgba(61, 27, 156, 0);
   cursor: pointer;
   /* ensure pointer events will apply to the button */
   pointer-events: all;
 }
 
-body {
-  margin: 0;
-  display: flexbox;
-  flex-direction: column;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  min-height: 100vh;
-  /*background-color: #353535;*/
+#btn-again:hover {
+  border-color: white;
 }
 
-header, footer, main, article, section {
+#rules-back {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  background-color: #F3C620;
+  color: #016D29;
+  border: 2px dotted rgba(61, 27, 156, 0);
+  cursor: pointer;
+  /* ensure pointer events will apply to the button */
+  pointer-events: all;
+}
+
+#rules-back:hover {
+  border-color: white;
+}
+
+#rules {
+  width: 450px;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #016D29;
+  color: #F3C620;
+  border: solid 1px black;
+  box-shadow: 0px 0px 5px black, 5px 5px 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: opacity 2s;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+body {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  color: #016D29;
+}
+
+footer, main, article, section {
   display: block;
 }
 
 h1, h2, h3, h4, h5, h6 nav a {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 0;
 }
 
+h2 {
+  color: white;
+}
+
+#winner {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
 p {
-  line-height: 1.6;
-  font-size: 1.15em;
+  font-size: 20px;
+  color: #F3C620;
 }
 
 li {
@@ -306,24 +579,13 @@ li {
 .border {
   width: 50%;
   height: 600px;
+  border-radius: 30px;
+  padding-left: 0px;
   margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 5px 10px 5px purple;
+  background-color: #C3B299;
+  box-shadow: 5px 10px 5px black;
   display: flex;
   flex-direction: column;
-}
-
-.warning {
-  padding: 16px;
-  background-color: #fdb3b3;
-}
-
-.warning p {
-  margin: 0;
-}
-
-.warning:not(.warning-no-script) {
-  margin-bottom: 1em;
 }
 
 header h1 {
@@ -334,27 +596,25 @@ header h1 {
   line-height: 1;
 }
 
-main {
-  padding: 20px;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.submit {
-  margin-bottom: 0;
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 75px 0 75px;
+}
+
+main {
+  padding: 20px;
 }
 
 footer {
   padding: 20px;
   font-size: 1.1em;
-  /*border-top: 1px dotted white;*/
   color: white;
-}
-
-a {
-  font-weight: bold;
-  color: #b78731;
-}
-
-a:hover {
-  color: orange;
-  text-decoration: none;
 }

@@ -9,16 +9,42 @@
 
 // Variables
 $main_color:black;
+$background_main: #C3B299;
+$background_pop: #016D29;
+$button_background:#F3C620;
+$shadow: black;
+$letters: #016D29;
+$box_letters:#F3C620;
+$button_letters:#016D29;
+$border_headings:  none;
+$main_button_color:#F3C620;
 
-$main_boxes_width: 100px;
-$main_boxes_height: 15px;
+$main_boxes_width: auto;
+$main_boxes_height: 100px;
+$border_box_height: 50px;
+$border_type: none;
+$border_font: 1px;
+$box_display: flex;
+$box_justify: center;
+$box_align: center;
+$header_font: 35px;
+$grid_name_font:20px;
+$font_family: 'Roboto',sans-serif;
+$radius:30px;
+$button_radius:30px;
+
+
 
 // Mixins
-@mixin grid_boxes($box_num, $border_type, $border_font, $color, $height, $width){
-    grid-area: $box_num;
-    border:$border_type $border_font $color;
-    height: $height;
-    width: $width;
+@mixin grid_boxes( $border_type, $border_font, $main_color, $border_box_height, $main_boxes_width, $box_display, $box_justify, $box_align ){
+   
+    border:$border_type $border_font $main_color;
+    height: $border_box_height;
+    width: $main_boxes_width;
+    display: $box_display;
+    justify-content: $box_justify;
+    align-items: $box_align;
+    
 }
 
 html {
@@ -29,121 +55,238 @@ html {
     box-sizing: inherit;
 }
 #container{
-   /* display:flex;
-    flex-wrap:wrap;
-    justify-content: center;*/
-    border:solid 1px $main_color;
+   
     min-width:45%;
     height:500px;
     display: grid;
-	/* Use the repeat function to repeat same sized columns */
-  	grid-template-columns: repeat(7, 1fr);
-  	grid-auto-rows: 10px;
-	grid-gap: 20px;
-	/* Note: use " . "  as a placeholder if you want
-	   to leave one section of the grid blank */
-	grid-template-areas:
-		"one one one two two two two"
-        "three four five six seven eight nine"
-		"ten eleven twelve thirt fourt fivet sixt"
-		"sevt eghtt ninet twent twent1 twent2 twent3"
-		"twent4 twent4 twent4 twent5 twent5 twent5 twent6";
+  	grid-template-columns:  repeat(8, 1fr);
+	grid-gap: 5px;
     
 }
-.box1 {
-	//grid-area: one;
-    //border:solid 1px $main_color;
-    //height: 25px;
-    @include grid_boxes(one, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
-}
-.box2 {
-    @include grid_boxes(two, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+#box1 {
 	
+    @include grid_boxes( $border_type, $border_font, $main_color, $border_box_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:1/3/2/6;
+    font-size: $header_font;
+    
 }
-.box3 {
-	@include grid_boxes(three, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+#box2 {
+    @include grid_boxes( $border_type, $border_font, $main_color, $border_box_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+	grid-area:1/6/2/9;
+    font-size: $header_font;
+}
+#box3 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/1/4/3;
+    font-size: $grid_name_font;
 }
 #box4 {
-	@include grid_boxes(four, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/3/4/4;
+    
 }
 #box5 {
-	@include grid_boxes(five, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/4/4/5;
 }
 #box6 {
-	@include grid_boxes(six, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/5/4/6;
+    font-size: $grid_name_font;
 }
 #box7 {
-	@include grid_boxes(seven, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/6/4/7;
 }
 #box8 {
-	@include grid_boxes(eight, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/7/4/8;
 }
 #box9 {
-	@include grid_boxes(nine, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:3/8/4/9;
+    font-size: $grid_name_font;
 }
-.box10 {
-	@include grid_boxes(ten, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+#box10 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/1/5/3;
+    font-size: $grid_name_font;
 }
 #box11 {
-	@include grid_boxes(eleven, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/3/5/4;
 }
 #box12 {
-	@include grid_boxes(twelve, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/4/5/5;
 }
 #box13 {
-	@include grid_boxes(thirt, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/5/5/6;
+    font-size: $grid_name_font;
 }
 #box14 {
-	@include grid_boxes(fourt, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/6/5/7;
 }
 #box15 {
-	@include grid_boxes(fivet, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/7/5/8;
 }
 #box16 {
-	@include grid_boxes(sixt, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:4/8/5/9;
+    font-size: $grid_name_font;
 }
-.box17 {
-	@include grid_boxes(sevt, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+#box17 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/1/6/3;
+    font-size: $grid_name_font;
 }
 #box18 {
-	@include grid_boxes(eghtt, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/3/6/4;
 }
 #box19 {
-	@include grid_boxes(ninet, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/4/6/5;
 }
 #box20 {
-	@include grid_boxes(twent, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/5/6/6;
+    font-size: $grid_name_font;
 }
 #box21 {
-	@include grid_boxes(twent1, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/6/6/7;
 }
 #box22 {
-	@include grid_boxes(twent2, solid, 1px, $main_color, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( $border_type, $border_font, $main_color, $main_boxes_height,$main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/7/6/8;
 }
 #box23 {
-	@include grid_boxes(twent3, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:5/8/6/9;
+    font-size: $grid_name_font;
 }
-.box24 {
-	@include grid_boxes(twent4, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+#box24 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:6/1/7/3;
+    font-size: $grid_name_font;
 }
 #box25 {
-	@include grid_boxes(twent5, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:6/5/7/6;
+    border-top: solid;
+    font-size: $grid_name_font;
 }
 #box26 {
-	@include grid_boxes(twent6, dashed, 2px, red, $main_boxes_height, $main_boxes_width);
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:6/8/7/9;
+    border-top: solid;
+    font-size: $grid_name_font;
 }
-/*#container button{
-    flex:0 0 auto;
-}*/
+#box27 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/3/3/4;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
+#box28 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/4/3/5;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
+#box29 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/5/3/6;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
+#box30 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/6/3/7;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
+#box31 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/7/3/8;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
+#box32 {
+	@include grid_boxes( dashed, $border_font, $border_headings, $main_boxes_height, $main_boxes_width, $box_display, $box_justify, $box_align);
+    grid-area:2/8/3/9;
+    border-bottom: solid;
+    font-size: $grid_name_font;
+}
 
-
+#start-btn{
+    display:inline-block;
+    padding:5px 2px 5px 2px;
+    width: 100px;
+    margin:0 0px 5px 0px;
+    border:2px dotted rgba(61, 27, 156, 0);
+    border-radius:$button_radius;
+    box-sizing: border-box;
+    background-color: $main_button_color;
+    text-decoration:none;
+    font-family:$font_family;
+    font-weight:300;
+    color:$button_letters;
+    text-shadow: 1px 1px rgba($color: #000000, $alpha: .35);
+    text-align:center;
+    transition: all 0.2s;
+    }
+#start-btn:hover{
+border-color:white;
+}
+#rules-btn{
+    display:inline-block;
+    padding:5px 2px 5px 2px;
+    width: 100px;
+    margin:0 0px 5px 0px;
+    border:2px dotted rgba(61, 27, 156, 0);
+    border-radius:$button_radius;
+    box-sizing: border-box;
+    background-color: $main_button_color;
+    text-decoration:none;
+    font-family:$font_family;
+    font-weight:300;
+    color:$button_letters;
+    text-shadow: 1px 1px rgba($color: #000000, $alpha: .35);
+    text-align:center;
+    transition: all 0.2s;
+    }
+#rules-btn:hover{
+    border-color:white;
+}
+#refresh-btn{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    font-weight: bold;
+    border-radius:$button_radius;
+    background-color: $button_background;
+    color:$button_letters;
+    border:2px dotted rgba(61, 27, 156, 0);
+    cursor:pointer;
+    /* ensure pointer events will apply to the button */
+    pointer-events: all;
+    }
+#refresh-btn:hover{
+    border-color:white; 
+}
 #pop-up{
-    width:300px;
+    width:450px;
     padding:10px;
-    background-color: indianred;
-    color:white;
+    background-color: $background_pop;
+    color: $box_letters;
+    border-radius:$radius;
     border:solid 1px $main_color;
-    box-shadow:0px 0px 5px yellow, 5px 5px 5px $main_color;
+    box-shadow:0px 0px 5px $shadow, 5px 5px 5px $main_color;
     position:absolute;
     top:50%;
     left:50%;
@@ -154,12 +297,13 @@ html {
     pointer-events: none;
 }
 #thanks{
-    width:300px;
+    width:450px;
     padding:10px;
-    background-color: indianred;
-    color:white;
+    background-color: $background_pop;
+    border-radius:$radius;
+    color:$box_letters;
     border:solid 1px $main_color;
-    box-shadow:0px 0px 5px yellow, 5px 5px 5px $main_color;
+    box-shadow:0px 0px 5px $shadow, 5px 5px 5px $main_color;
     position:absolute;
     top:50%;
     left:50%;
@@ -172,51 +316,103 @@ html {
     bottom:10px;
     left:10px;
     font-weight: bold;
-    background-color: inherit;
-    color:inherit;
-    border:solid 1px white;
+    border-radius:$button_radius;
+    background-color: $button_background;
+    color:$button_letters;
+    border:2px dotted rgba(61, 27, 156, 0);
     cursor:pointer;
     /* ensure pointer events will apply to the button */
     pointer-events: all;
 }
+#btn-close:hover{
+    border-color:white;
+}
+
 #btn-again{
     position:absolute;
     bottom:10px;
     right:10px;
     font-weight: bold;
-    background-color: inherit;
-    color:inherit;
-    border:solid 1px grey;
+    border-radius:$button_radius;
+    background-color: $button_background;
+    color:$button_letters;
+    border:2px dotted rgba(61, 27, 156, 0);
     cursor:pointer;
     /* ensure pointer events will apply to the button */
     pointer-events: all;
 }
+#btn-again:hover{
+    border-color:white;
+}
+#rules-back{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    font-weight: bold;
+    border-radius:$button_radius;
+    background-color: $button_background;
+    color:$button_letters;
+    border:2px dotted rgba(61, 27, 156, 0);
+    cursor:pointer;
+    /* ensure pointer events will apply to the button */
+    pointer-events: all;
+}
+#rules-back:hover{
+    border-color:white;
+}
+
+#rules{
+    width:450px;
+    padding:10px;
+    border-radius:$radius;
+    background-color: $background_pop;
+    color: $box_letters;
+    border:solid 1px $main_color;
+    box-shadow:0px 0px 5px $shadow, 5px 5px 5px $main_color;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transition: opacity 2s;
+    transform:translate(-50%, -50%);
+    
+    opacity:0;
+    pointer-events: none;
+}
 
 body {
-    margin: 0;
-    display:flexbox;
+    margin: 10px;
+    display:flex;
     flex-direction:column ;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:$font_family;
     min-height: 100vh;
-    /*background-color: #353535;*/
+    color: $letters;
+    
    
 }
 
-header, footer, main, article, section {
+footer, main, article, section {
     display: block;
 }
 
 h1, h2, h3, h4, h5, h6 nav a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:$font_family;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     margin-top: 0;
 }
+h2{
+    color: white;  
+}
+#winner{
+    color: white;  
+    font-weight: bold;
+    font-size: 25px;
+}
 
 p {
-    line-height: 1.6;
-    font-size: 1.15em;
+    font-size: 20px;
+    color: $box_letters;
 }
 
 li {
@@ -227,25 +423,14 @@ li {
 .border {
     width: 50%;
     height: 600px;
+    border-radius:$radius;
+    padding-left: 0px;
     margin: 0 auto;
-    background-color: #fff;
-    box-shadow:5px 10px 5px purple;
+    background-color: $background_main;
+    box-shadow:5px 10px 5px $shadow;
     display: flex;
     flex-direction: column;
     
-}
-
-.warning {
-    padding: 16px;
-    background-color: #fdb3b3;
-}
-
-.warning p {
-    margin: 0;
-}
-
-.warning:not(.warning-no-script){
-    margin-bottom: 1em;
 }
 
 header h1 {
@@ -255,32 +440,32 @@ header h1 {
     color: white;
     line-height: 1;
 }
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+header div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0 75px 0 75px;
+}
 
 main {
     padding: 20px;
    
 }
 
-.submit {
-    margin-bottom: 0;
-}
-
 
 footer {
     padding: 20px;
     font-size: 1.1em;
-    /*border-top: 1px dotted white;*/
     color: white;
 }
 
 
 
 
-a{
-	font-weight:bold;
-	color:#b78731;
-}
-a:hover{
-	color:orange;
-	text-decoration:none;
-}

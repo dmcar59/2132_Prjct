@@ -11,60 +11,83 @@
     <div >
         <header>
             <h1>COMP 2132 Project - Dice Game</h1>
-            <img style="height:50px;margin-left:0px;padding-bottom:0px;" src="images/dice1.png" alt="logo"/>
+            
+            
+           <div>
+            <section id="start">
+                <button id="start-btn">Start Game</button>    
+            </section>
+           
+            <section>
+                <button id="rules-btn">Rules</button>
+            </section>
+            </div>
         </header>
         <main class="border">            
-            <section id="start">
-                
-                <button id="start-btn">Start Game</button>
-               
-                
-            </section>
+            
             
             <section id="container">                
-                <div class="box1">P</div>
-                <div class="box2">C</div>
-                <div class="box3">R1t </div>
-                <div id="box4">P1 1</div>
-                <div id="box5">P1 2</div>
+                <div id="box1">PLAYER</div>
+                <div id="box2">COMPUTER</div>
+                <div id="box3">First Roll</div>
+                <img id="box4" src="images/dice1.png" alt="NEXT ROLL">
+                <img id="box5" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box6">PS 1</div>
-                <div id="box7">C1 1</div>
-                <div id="box8">C1 2</div>
+                <img id="box7" src="images/dice1.png" alt="NEXT ROLL">
+                <img id="box8" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box9">CS 1</div>
-                <div class="box10">R2t</div>
-                <div id="box11">P2 1</div>
-                <div id="box12">P2 2</div>
+                <div id="box10">Second Roll</div>
+                <img id="box11" src="images/dice1.png" alt="NEXT ROLL">
+                <img id="box12" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box13">PS 2</div>
-                <div id="box14">C2 1</div>
-                <div id="box15">C2 2</div>
+                <img id="box14" src="images/dice1.png" alt="NEXT ROLL">
+                <img id="box15" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box16">CS 2</div>
-                <div class="box17">R3t</div>
-                <div id="box18">P3 1</div>
-                <div id="box19">P3 2</div>
+                <div id="box17">Third Roll</div>
+                <img id="box18" src="images/dice1.png" alt="NEXT ROLL"> 
+                <img id="box19" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box20">PS 3</div>
-                <div id="box21">C3 1</div>
-                <div id="box22">C3 2</div>
+                <img id="box21" src="images/dice1.png" alt="NEXT ROLL">
+                <img id="box22" src="images/dice1.png" alt="NEXT ROLL">
                 <div id="box23">CS 3</div>
-                <div class="box24">T</div>
-                <div id="box25">PS</div>
-                <div id="box26">CS</div>
+                <div id="box24">TOTALS</div>
+                <div id="box25">Player Total</div>
+                <div id="box26">Computer Total</div>
+                <div id="box27">Die One</div>
+                <div id="box28">Die Two</div>
+                <div id="box29">Total</div>
+                <div id="box30">Die One</div>
+                <div id="box31">Die Two</div>
+                <div id="box32">Total</div>
+
             </section>
             <section id="pop-up">
                 <h2>Game Over</h2>
                 <p id="score"> Score</p>
                 <p id="winner">Who's the winner</p>
                 <button id="btn-close">NO</button>
-                <p>Do you wish to play again?</p>
+                <p>Do you wish to play again?</p><br>
                 <button id="btn-again">YES</button><!--&#10005;-->
                
             </section>
             <section id="thanks">
                 <h2>THANKS FOR PLAYING</h2>
                 <p>See You Next Time</p>
-                <p>Reload Web Site If You Really Want to Play Again</p>
+                <p>Hit Refresh if you REALLY want to play again!!</p><br>
+                <button id="refresh-btn">Refresh</button>
             </section>
-            <section>
-                <p>aklsdjf asdjf jklajsd fjlasdfklj kla;sdf klj</p>
+            <section id="rules">
+                <h2>RULES</h2>
+                <p>Scoring for the game works as follows:</p>
+                <ul>
+                    <li>The player plays against the computer by pressing the Start Game/Next Roll button</li>
+                    <li>There are three rounds or two dice each. Each round is scored for both players</li>
+                    <li>If the player rolls a one (1) on either dice the score for that round is zero</li>
+                    <li>If the player rolls a pair dice the score for that round is the total of the pair times two</li>
+                    <li>If the player rolls anything else, the score for the round is the total of the two dice</li>
+                </ul>
+                <p>GOOD LUCK!!</p>
+                <button id="rules-back">Back</button>
             </section>
         </main>  
 
